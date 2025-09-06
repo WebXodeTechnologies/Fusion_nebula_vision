@@ -1,0 +1,175 @@
+/* Logo Extractor CSS */
+
+/* This CSS uses clip-path to extract individual logos from the brands-collage.png */
+/* Each logo class defines a specific clip region */
+
+.logo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('../assets/brands-collage.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Row 1 */
+.logo-schneider {
+  clip-path: inset(0% 87% 80% 0%);
+}
+
+.logo-siemens {
+  clip-path: inset(0% 74% 80% 13%);
+}
+
+.logo-mobil {
+  clip-path: inset(0% 61% 80% 26%);
+}
+
+.logo-adnoc {
+  clip-path: inset(0% 48% 80% 39%);
+}
+
+.logo-gulf {
+  clip-path: inset(0% 35% 80% 52%);
+}
+
+.logo-starbright {
+  clip-path: inset(0% 22% 80% 65%);
+}
+
+.logo-makita {
+  clip-path: inset(0% 9% 80% 78%);
+}
+
+.logo-esab {
+  clip-path: inset(0% 0% 80% 91%);
+}
+
+/* Row 2 */
+.logo-karcher {
+  clip-path: inset(20% 87% 60% 0%);
+}
+
+.logo-shurhold {
+  clip-path: inset(20% 74% 60% 13%);
+}
+
+.logo-crc {
+  clip-path: inset(20% 61% 60% 26%);
+}
+
+.logo-victor {
+  clip-path: inset(20% 48% 60% 39%);
+}
+
+.logo-cosmoplast {
+  clip-path: inset(20% 35% 60% 52%);
+}
+
+.logo-fluke {
+  clip-path: inset(20% 22% 60% 65%);
+}
+
+.logo-hilti {
+  clip-path: inset(20% 9% 60% 78%);
+}
+
+.logo-stanley {
+  clip-path: inset(20% 0% 60% 91%);
+}
+
+/* Row 3 */
+.logo-hempel {
+  clip-path: inset(40% 87% 40% 0%);
+}
+
+.logo-national-paints {
+  clip-path: inset(40% 74% 40% 13%);
+}
+
+.logo-dewalt {
+  clip-path: inset(40% 61% 40% 26%);
+}
+
+.logo-honeywell {
+  clip-path: inset(40% 48% 40% 39%);
+}
+
+.logo-gazelle {
+  clip-path: inset(40% 35% 40% 52%);
+}
+
+.logo-black-decker {
+  clip-path: inset(40% 22% 40% 65%);
+}
+
+.logo-bosch {
+  clip-path: inset(40% 9% 40% 78%);
+}
+
+.logo-craftsman {
+  clip-path: inset(40% 0% 40% 91%);
+}
+
+/* Row 4 */
+.logo-mitutoyo {
+  clip-path: inset(60% 87% 20% 0%);
+}
+
+.logo-band-it {
+  clip-path: inset(60% 74% 20% 13%);
+}
+
+.logo-uken {
+  clip-path: inset(60% 61% 20% 26%);
+}
+
+.logo-abb {
+  clip-path: inset(60% 48% 20% 39%);
+}
+
+.logo-enerpac {
+  clip-path: inset(60% 35% 20% 52%);
+}
+
+.logo-msa {
+  clip-path: inset(60% 22% 20% 65%);
+}
+
+.logo-deltaplus {
+  clip-path: inset(60% 9% 20% 78%);
+}
+
+.logo-econ {
+  clip-path: inset(60% 0% 20% 91%);
+}
+
+/* Row 5 */
+.logo-wd40 {
+  clip-path: inset(80% 87% 0% 0%);
+}
+
+.logo-danfoss {
+  clip-path: inset(80% 74% 0% 13%);
+}
+
+.logo-irwin {
+  clip-path: inset(80% 61% 0% 26%);
+}
+
+.logo-duracell {
+  clip-path: inset(80% 48% 0% 39%);
+}
+
+.logo-gojo {
+  clip-path: inset(80% 35% 0% 52%);
+}
+
+.logo-deckmate {
+  clip-path: inset(80% 22% 0% 65%);
+}
+
+.logo-metabo {
+  clip-path: inset(80% 9% 0% 78%);
+}

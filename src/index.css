@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Futuristic Design System - Dark Theme with Neon Accents */
+
+@layer base {
+  :root {
+    /* Dark Futuristic Base */
+    --background: 240 10% 3.9%;
+    --foreground: 210 40% 98%;
+
+    /* Card & Surface */
+    --card: 240 10% 3.9%;
+    --card-foreground: 210 40% 98%;
+    --glass: 240 10% 3.9% / 0.1;
+
+    /* Primary - Neon Cyan */
+    --primary: 191 91% 55%;
+    --primary-foreground: 240 10% 3.9%;
+    --primary-glow: 191 91% 55% / 0.3;
+    
+    /* Secondary - Deep Purple */
+    --secondary: 263 85% 65%;
+    --secondary-foreground: 210 40% 98%;
+    --secondary-glow: 263 85% 65% / 0.3;
+
+    /* Accent - Electric Blue */
+    --accent: 217 91% 60%;
+    --accent-foreground: 240 10% 3.9%;
+    --accent-glow: 217 91% 60% / 0.3;
+
+    /* Neutral Elements */
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    
+    /* Borders & Inputs */
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 191 91% 55%;
+
+    /* Special Effects */
+    --gradient-primary: linear-gradient(135deg, hsl(191 91% 55%), hsl(263 85% 65%));
+    --gradient-secondary: linear-gradient(135deg, hsl(263 85% 65%), hsl(217 91% 60%));
+    --gradient-radial: radial-gradient(circle at center, hsl(191 91% 55% / 0.1), transparent 70%);
+    
+    /* Shadows & Glows */
+    --shadow-glow: 0 0 50px hsl(191 91% 55% / 0.3);
+    --shadow-purple: 0 0 50px hsl(263 85% 65% / 0.3);
+    --shadow-blue: 0 0 50px hsl(217 91% 60% / 0.3);
+    
+    /* Glass Morphism */
+    --glass-bg: hsl(240 10% 3.9% / 0.1);
+    --glass-border: hsl(210 40% 98% / 0.1);
+    
+    /* Animation Variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    --radius: 0.8rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--primary));
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(var(--accent));
+  }
+}
+
+@layer components {
+  /* Glass Morphism Base */
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Glow Effects */
+  .glow-primary {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .glow-secondary {
+    box-shadow: var(--shadow-purple);
+  }
+  
+  .glow-accent {
+    box-shadow: var(--shadow-blue);
+  }
+  
+  /* Gradient Backgrounds */
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  /* Floating Animations */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+  
+  /* Pulse Glow Animation */
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite alternate;
+  }
+  
+  /* Text Glow */
+  .text-glow {
+    text-shadow: 0 0 20px hsl(var(--primary) / 0.5);
+  }
+  
+  /* Hero Text Styles */
+  .hero-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  /* Animation Keyframes */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+  
+  @keyframes pulseGlow {
+    0% {
+      box-shadow: 0 0 20px hsl(var(--primary) / 0.3);
+    }
+    100% {
+      box-shadow: 0 0 40px hsl(var(--primary) / 0.6);
+    }
+  }
+  
+  @keyframes slideInUp {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInBlur {
+    from {
+      opacity: 0;
+      filter: blur(10px);
+    }
+    to {
+      opacity: 1;
+      filter: blur(0);
+    }
+  }
+  
+  @keyframes border-glow {
+    0% {
+      border-image: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)), hsl(var(--primary))) 1;
+    }
+    50% {
+      border-image: linear-gradient(225deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)), hsl(var(--primary))) 1;
+    }
+    100% {
+      border-image: linear-gradient(45deg, hsl(var(--primary)), hsl(var(--secondary)), hsl(var(--accent)), hsl(var(--primary))) 1;
+    }
+  }
+  
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.7;
+      transform: scale(1.5);
+    }
+  }
+  
+  @keyframes pulse-medium {
+    0%, 100% {
+      opacity: 0.4;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1.3);
+    }
+  }
+  
+  @keyframes pulse-fast {
+    0%, 100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.9;
+      transform: scale(1.2);
+    }
+  }
+  
+  /* Utility Classes */
+  .animate-slide-up {
+    animation: slideInUp 0.6s ease-out;
+  }
+  
+  .animate-fade-blur {
+    animation: fadeInBlur 0.8s ease-out;
+  }
+  
+  .animate-border-glow {
+    animation: border-glow 3s linear infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+  
+  .animate-pulse-medium {
+    animation: pulse-medium 4s ease-in-out infinite;
+  }
+  
+  .animate-pulse-fast {
+    animation: pulse-fast 2s ease-in-out infinite;
+  }
+  
+  /* Responsive Typography */
+  .text-responsive-xs { font-size: clamp(0.75rem, 2vw, 0.875rem); }
+  .text-responsive-sm { font-size: clamp(0.875rem, 2.5vw, 1rem); }
+  .text-responsive-base { font-size: clamp(1rem, 3vw, 1.125rem); }
+  .text-responsive-lg { font-size: clamp(1.125rem, 3.5vw, 1.25rem); }
+  .text-responsive-xl { font-size: clamp(1.25rem, 4vw, 1.5rem); }
+  .text-responsive-2xl { font-size: clamp(1.5rem, 5vw, 2rem); }
+  .text-responsive-3xl { font-size: clamp(2rem, 6vw, 3rem); }
+  .text-responsive-4xl { font-size: clamp(2.5rem, 8vw, 4rem); }
+  .text-responsive-5xl { font-size: clamp(3rem, 10vw, 5rem); }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
