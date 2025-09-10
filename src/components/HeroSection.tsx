@@ -70,18 +70,6 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Spline 3D Background - Full Site */}
-      <div className="fixed inset-0 z-0">
-        <iframe
-          src="https://my.spline.design/orb-6WsBNLAzUVCoF7kEgodWi5qv/"
-          frameBorder="0"
-          width="100%"
-          height="100%"
-          className="opacity-60"
-          title="3D Background"
-        />
-        <div className="absolute inset-0 bg-background/40" />
-      </div>
-      
       {/* Floating Background Elements */}
       <div className="floating-orb-1 absolute top-1/4 left-1/6 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
       <div className="floating-orb-2 absolute bottom-1/3 right-1/4 w-48 h-48 bg-secondary/15 rounded-full blur-2xl" />
