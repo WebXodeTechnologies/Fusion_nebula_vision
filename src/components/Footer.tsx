@@ -108,7 +108,7 @@ const Footer = () => {
                 <h4 className="font-semibold mb-3">Contact Information</h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
                   <p>📧 fusioninternationaltrd@gmail.com</p>
-                  <p>📱 +971 527467694</p>
+                  <p>📱 +971 527467694 | +971528110250 | 024402608</p>
                   <p>📍 Plot 69 Store #3, MW5 Mussafah Industrial City, Abu Dhabi</p>
                 </div>
               </div>
@@ -174,9 +174,9 @@ const Footer = () => {
           <div className="container mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <span>© 2024 Fusion International Trading. Made with</span>
-                <Heart size={16} className="text-primary" />
-                <span>Powered by AM Battery Industries</span>
+                <span>© 2025 Fusion International Devloped By</span>
+                <Heart size={16} className="text-red-500" />
+                <span>Vaishal Malu</span>
               </div>
               
               {/* Back to Top Button */}
