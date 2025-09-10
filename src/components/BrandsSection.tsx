@@ -1,12 +1,12 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { 
-  Wrench, 
-  Car, 
-  Anchor, 
-  Sun, 
-  Lightning, 
+import {
+  Wrench,
+  Car,
+  Anchor,
+  Sun,
+  Lightning,
   HouseLine,
   Palette,
   Drop,
@@ -36,16 +36,16 @@ const BrandsSection = () => {
       { opacity: 0, y: 30 },
       { opacity: 1, y: 0, duration: 0.8, ease: 'power2.out' }
     )
-    .fromTo('.service-card',
-      { opacity: 0, y: 50, scale: 0.9 },
-      { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.1, ease: 'power2.out' },
-      '-=0.4'
-    )
-    .fromTo('.brands-showcase',
-      { opacity: 0, x: -50 },
-      { opacity: 1, x: 0, duration: 0.8, ease: 'power2.out' },
-      '-=0.6'
-    );
+      .fromTo('.service-card',
+        { opacity: 0, y: 50, scale: 0.9 },
+        { opacity: 1, y: 0, scale: 1, duration: 0.6, stagger: 0.1, ease: 'power2.out' },
+        '-=0.4'
+      )
+      .fromTo('.brands-showcase',
+        { opacity: 0, x: -50 },
+        { opacity: 1, x: 0, duration: 0.8, ease: 'power2.out' },
+        '-=0.6'
+      );
 
     return () => {
       ScrollTrigger.getAll().forEach(t => t.kill());
@@ -116,7 +116,7 @@ const BrandsSection = () => {
       {/* Background Elements */}
       <div className="absolute top-1/4 left-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
-      
+
       <div className="brands-container container mx-auto px-6">
         {/* Header */}
         <div className="brands-title text-center mb-16">
@@ -125,7 +125,7 @@ const BrandsSection = () => {
             Products & <span className="hero-text">Services</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Fusion International Trading Company delivers comprehensive solutions across 
+            Fusion International Trading Company delivers comprehensive solutions across
             multiple industries, powered by our sister company AM Battery Industries.
           </p>
         </div>
@@ -141,7 +141,7 @@ const BrandsSection = () => {
                 onClick={() => {
                   const routes = {
                     'Marine': '/marine-parts',
-                    'Automotive': '/automotive-parts', 
+                    'Automotive': '/automotive-parts',
                     'Machinery': '/machinery',
                     'Solar': '/solar',
                     'Electrical': '#contact',
@@ -176,7 +176,7 @@ const BrandsSection = () => {
                 <p className="text-muted-foreground text-sm leading-relaxed mb-3">
                   {service.description}
                 </p>
-                
+
                 {/* Click indicator */}
                 <div className="text-xs text-primary/70 group-hover:text-primary transition-colors">
                   Click for details →
@@ -195,10 +195,10 @@ const BrandsSection = () => {
               <p className="text-muted-foreground text-lg">Trusted by Global Leaders in Innovation & Reliability</p>
             </div>
             <div className="glass rounded-2xl p-8 hover:glow-primary transition-all duration-500 bg-gradient-to-br from-slate-900 to-slate-800">
-              <img 
-                src={brandsCollage} 
-                alt="Partner Brands" 
-                className="w-full h-auto object-contain max-h-[400px]" 
+              <img
+                src={brandsCollage}
+                alt="Partner Brands"
+                className="w-full h-auto object-contain max-h-[400px]"
               />
             </div>
           </div>
@@ -206,7 +206,7 @@ const BrandsSection = () => {
 
         {/* Contact CTA */}
         <div className="text-center mt-12">
-          <button 
+          <button
             onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 glass border border-primary/30 text-foreground rounded-full font-semibold hover:border-primary hover:glow-primary transition-all duration-300 hover:scale-105"
           >
