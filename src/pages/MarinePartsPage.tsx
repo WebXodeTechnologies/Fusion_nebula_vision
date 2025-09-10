@@ -143,7 +143,6 @@ const MarinePartsPage = () => {
           </div>
         </section>
       </main>
-      
       <Footer />
     </div>
   );
