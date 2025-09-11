@@ -86,7 +86,7 @@ const BrandsSection = () => {
       description: 'Professional electrical contracting and installation services.',
       icon: Lightning,
       category: 'Electrical',
-      url: '#contact',
+      url: '/electrical-services',
     },
     {
       id: 6,
@@ -94,7 +94,7 @@ const BrandsSection = () => {
       description: 'Air conditioning, plumbing, and climate control solutions.',
       icon: Snowflake,
       category: 'HVAC',
-      url: '#contact',
+      url: '/hvac-plumbing',
     },
     {
       id: 7,
@@ -102,7 +102,7 @@ const BrandsSection = () => {
       description: 'Building materials, insulation items, and construction supplies.',
       icon: HouseLine,
       category: 'Construction',
-      url: '#contact',
+      url: '/construction',
     },
     {
       id: 8,
@@ -110,7 +110,7 @@ const BrandsSection = () => {
       description: 'Industrial batteries and power solutions from AM Battery Industries.',
       icon: BatteryHigh,
       category: 'Power',
-      url: '#contact',
+      url: '/battery-solutions',
     },
   ];
 
