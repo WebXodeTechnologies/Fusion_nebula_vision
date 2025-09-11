@@ -54,7 +54,7 @@ const BrandsSection = () => {
       description: 'Complete range of marine equipment and spare parts for all vessel types.',
       icon: Anchor,
       category: 'Marine',
-      url: '/',
+      url: '/marine-parts',
     },
     {
       id: 2,
@@ -62,7 +62,7 @@ const BrandsSection = () => {
       description: 'Truck and car spare parts from leading manufacturers worldwide.',
       icon: Car,
       category: 'Automotive',
-      url: '/',
+      url: '/automotive-parts',
     },
     {
       id: 3,
@@ -70,7 +70,7 @@ const BrandsSection = () => {
       description: 'Rental services for construction and industrial heavy machinery.',
       icon: Gear,
       category: 'Machinery',
-      url: '/',
+      url: '/machinery',
     },
     {
       id: 4,
@@ -78,7 +78,7 @@ const BrandsSection = () => {
       description: 'Solar panel supply and professional installation services.',
       icon: Sun,
       category: 'Solar',
-      url: '/',
+      url: '/solar',
     },
     {
       id: 5,
@@ -118,7 +118,7 @@ const BrandsSection = () => {
     if (url.startsWith('#')) {
       document.getElementById(url.substring(1))?.scrollIntoView({ behavior: 'smooth' });
     } else {
-      window.open(url, '_blank'); // ✅ opens in new tab
+      window.open(url, '_blank');
     }
   };
 
