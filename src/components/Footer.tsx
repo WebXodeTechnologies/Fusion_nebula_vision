@@ -174,7 +174,7 @@ const Footer = () => {
           <div className="container mx-auto px-6 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="flex items-center gap-1 text-sm text-muted-foreground">
-                <span>© 2025 Fusion International Devloped By</span>
+                <span>© 2025 Fusion International Developed By</span>
                 <Heart size={16} className="text-red-500" />
                 <span>Vaishal Malu</span>
               </div>
