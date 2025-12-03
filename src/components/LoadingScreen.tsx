@@ -62,7 +62,7 @@ const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
       <div className="relative z-10 text-center">
         <div className="loading-text mb-12">
           <h1 className="text-responsive-4xl font-bold hero-text mb-4">
-            Fusion International
+            FUSION INTERNATIONAL TRADING AND TECHNICAL SERVICES LLC
           </h1>
           <p className="text-responsive-lg text-muted-foreground">
             Loading Experience...
