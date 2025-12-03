@@ -77,16 +77,17 @@ const HeroSection = () => {
       
       <div className="container mx-auto px-6 grid lg:grid-cols-1 gap-12 items-center relative z-10">
         {/* Center Content */}
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="text-center max-w-7xl mx-auto">
           <div className="hero-title mb-6">
-            <h1 className="text-responsive-5xl font-bold leading-tight mb-4">
+            <h1 className="text-responsive-4xl font-bold leading-tight mb-4">
               Welcome to{' '}
+              <br />
               <span className="hero-text relative">
-                Fusion International
+                FUSION INTERNATIONAL TRADING AND TECHNICAL SERVICES LLC
                 <Sparkle className="absolute -top-2 -right-2 w-6 h-6 text-primary animate-pulse" />
               </span>
               <br />
-              <span className="text-foreground">Trading Company</span>
+             
             </h1>
           </div>
           

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { gsap } from 'gsap';
 import { List, X } from 'phosphor-react';
+import Logo  from "../../src/assets/FusionLogo.png"
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,9 +61,11 @@ const Navigation = () => {
         <div className="container mx-auto px-6 py-4">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <div className="text-2xl font-bold hero-text">
-              Fusion International
+            <div className="flex">
+              <img src={Logo} width={100} height={40} className='object-cover'/>
+              <h2 className='text-2xl font-bold hero-text py-10 px-4'>Fusion International</h2>
             </div>
+            
 
             {/* Desktop Navigation */}
             <div className="hidden md:flex items-center space-x-8">

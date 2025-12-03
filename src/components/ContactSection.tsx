@@ -94,14 +94,14 @@ const ContactSection = () => {
     {
       icon: Envelope,
       label: 'Email',
-      value: 'fusioninternationaltrd@gmail.com',
-      href: 'mailto:fusioninternationaltrd@gmail.com'
+      value: 'project@fusionsinternational.com',
+      href: 'mailto:project@fusionsinternational.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+971 527467694',
-      href: 'tel:+971527467694'
+      value: '+971528110250',
+      href: 'tel:+971528110250'
     },
     {
       icon: MapPin,
@@ -258,7 +258,7 @@ const ContactSection = () => {
 
               {/* Company Info */}
               <div className="p-6 glass rounded-xl">
-                <h4 className="font-bold text-lg mb-2 hero-text">Fusion International</h4>
+                <h4 className="font-bold text-lg mb-2 hero-text">FUSION INTERNATIONAL TRADING AND TECHNICAL SERVICES LLC</h4>
                 <p className="text-muted-foreground text-sm leading-relaxed">
                   A sister concern of AM Battery Industries, specializing in international 
                   trading, marine services, and innovative business solutions.

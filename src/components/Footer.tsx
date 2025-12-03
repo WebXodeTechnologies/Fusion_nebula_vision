@@ -95,8 +95,8 @@ const Footer = () => {
             {/* Company Info */}
             <div className="lg:col-span-2">
               <div className="mb-6">
-                <h3 className="text-2xl font-bold hero-text mb-4">
-                  Fusion International
+                <h3 className="text-2xl font-bold hero-text mb-4 ">
+                 FUSION INTERNATIONAL TRADING AND TECHNICAL SERVICES LLC
                 </h3>
                 <p className="text-muted-foreground leading-relaxed max-w-md">
                   A sister concern of AM Battery Industries, driving innovation in international 
@@ -107,8 +107,8 @@ const Footer = () => {
               <div className="mb-6">
                 <h4 className="font-semibold mb-3">Contact Information</h4>
                 <div className="space-y-2 text-sm text-muted-foreground">
-                  <p>📧 fusioninternationaltrd@gmail.com</p>
-                  <p>📱 +971 527467694 | +971528110250 | 024402608</p>
+                  <p>📧 project@fusioninternational.com</p>
+                  <p>📱 +971 528110250 | +971 524581340 | +971 024402608 </p>
                   <p>📍 Plot 69 Store #3, MW5 Mussafah Industrial City, Abu Dhabi</p>
                 </div>
               </div>
