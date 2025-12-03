@@ -16,6 +16,7 @@ import {
   Buildings
 } from 'phosphor-react';
 
+
 gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
@@ -77,9 +78,9 @@ const AboutSection = () => {
                   <div className="w-full h-full rounded-full bg-muted flex items-center justify-center overflow-hidden">
                     {/* Company Logo */}
                     <img 
-                      src="/fusion-company-logo.jpg" 
+                      src="/src/assets/FusionLogo.png" 
                       alt="Fusion International Trading Company Logo" 
-                      className="w-full h-full object-cover rounded-full"
+                      className="w-full h-full object-contain rounded-full"
                     />
                   </div>
                 </div>
